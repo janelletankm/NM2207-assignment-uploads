@@ -1,0 +1,1 @@
+{"frames":[{"func":"ggplot(loans, aes(x = debt_to_income, y = interest_rate))","file":"","line_number":0,"end_line_number":0,"character_number":0,"end_character_number":0}],"message":"Error: object 'loans' not found\n"}

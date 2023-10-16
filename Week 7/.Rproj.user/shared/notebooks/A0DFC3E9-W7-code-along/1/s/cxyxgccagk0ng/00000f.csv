@@ -1,0 +1,8 @@
+"0","library(openintro)"
+"2","Loading required package: airports
+"
+"2","Loading required package: cherryblossom
+"
+"2","Loading required package: usdata
+"
+"0","glimpse(loans_full_schema)"

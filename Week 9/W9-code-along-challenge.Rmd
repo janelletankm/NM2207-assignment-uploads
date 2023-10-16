@@ -1,0 +1,219 @@
+---
+title: "W9-code-along-challenge"
+author: "Janelle Tan"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# II. Code to edit and execute using the Code-along-9.Rmd file 
+<br>
+
+## A. Code Along
+<br>
+
+### 1a. Tidy data (Slide #8)
+
+```{r, eval=TRUE,echo=TRUE}
+# tidy data
+
+library(tidyverse)
+tidydata <- tribble(
+~country, ~year, ~cases, ~population,
+"Afghanistan", 1999, 745, 19987071,
+"Afghanistan", 2000, 2666, 20595360,
+"Brazil", 1999, 37737, 172006362,
+"Brazil", 2000, 80488, 174504898,
+"China", 1999, 212258, 1272915272,
+"China", 2000, 213766, 1280428583)
+tidydata
+
+```
+<br>
+
+### 1b. Untidy data (Slide #8)
+```{r, eval=TRUE,echo=TRUE}
+# untidy data
+
+nontidydata <- tribble(
+ ~country,~year,~rate, 
+"Afghanistan", 1999, "745/19987071", 
+"Afghanistan", 2000, "2666/20595360", 
+"Brazil", 1999, "37737/172006362", 
+"Brazil", 2000, "80488/174504898", 
+"China", 1999, "212258/1272915272",
+"China", 2000, "213766/1280428583")
+nontidydata
+
+```
+<br>
+
+### 2. Tidy-ing data EG 1 (Slide #11)
+
+```{r, eval=TRUE,echo=TRUE}
+tidieddata <- nontidydata %>%
+ separate(rate, into = c("cases", 
+ "population"),
+ sep = "/")
+tidieddata
+
+
+```
+<br>
+
+### 3. Tidy-ing data EG 1 continued (Slide #12)
+
+```{r, eval=TRUE,echo=TRUE}
+newtidieddata <- tidieddata %>%
+ pivot_longer(
+ cols = cases:population,
+ names_to = "measurement"
+,
+ values_to = "value"
+ )
+newtidieddata
+```
+<br>
+
+### 4. Tidy-ing data EG 2 (Slide #14)
+
+```{r, eval=TRUE,echo=TRUE}
+df <- tribble(
+ ~id, ~bp1, ~bp2,
+ "A", 100, 120,
+ "B", 140, 115,
+ "C", 120, 125
+)
+df
+
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+df %>%
+ pivot_longer(
+ cols = bp1:bp2,
+ names_to = "measurement",
+ values_to = "value"
+ )
+
+```
+<br>
+
+
+### 6. Reshaping data EG 3 (Slides #18)
+
+```{r, eval=TRUE,echo=TRUE}
+
+newtidieddata
+
+newtidieddata %>% 
+ pivot_wider(names_from="measurement",
+ values_from="value")
+
+```
+<br>
+
+### 7. Reshaping data EG 4 (Slides #19)
+
+```{r, eval=TRUE,echo=TRUE}
+
+df <- tribble(
+ ~id, ~measurement, ~value,
+ "A", "bp1", 100,
+ "B", "bp1", 140,
+ "B", "bp2", 115, 
+ "A", "bp2", 120,
+ "A", "bp3", 105
+)
+df
+
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+
+df %>% 
+ pivot_wider(
+ names_from = measurement,
+ values_from = value
+ )
+
+```
+<br>
+
+
+
+## B. Challenge
+
+### 1. Billboard
+
+```{r, eval=TRUE,echo=TRUE}
+billboard
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+billboard_long <- billboard %>% 
+  pivot_longer(cols = starts_with("wk"), 
+               names_to = "week",
+               values_drop_na = TRUE) %>% 
+  mutate(week = parse_number(week))
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+
+ggplot(data = billboard_long,
+ mapping = aes(x = week, y = value)) +
+ geom_line() +
+ labs(title = "Rank against Week",
+      x = "Week", y = "Rank")
+
+```
+<br>
+
+### 2. CMS Patient Experience
+
+```{r, eval=TRUE,echo=TRUE}
+cms_patient_experience
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+# Step 1: Pivot the data using pivot_wider
+reshaped_data <- cms_patient_experience %>%
+  pivot_wider(
+    names_from = measure_cd,
+    values_from = prf_rate
+  )
+
+reshaped_data
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+reshaped_data <- cms_patient_experience %>%
+  pivot_wider(
+    id_cols = starts_with("org"),
+    names_from = measure_cd,
+    values_from = prf_rate
+  )
+
+reshaped_data
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+
+```
+<br>
