@@ -1,0 +1,38 @@
+---
+title: "Challenge-1"
+author: "Janelle Tan"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Hi! I'm Janelle, a Y2 Psych major with a 2nd minor in CNM (tentatively). I took this module because I have interest in UX/UI design!
+
+```{r, out.height="800px",out.width="700px",echo=TRUE,eval=TRUE,fig.cap="This is me!"}
+knitr::include_graphics("C:/Users/janel/OneDrive/Documents/NM2207/Week 1/photoofmyself.jpg")  
+```
+
+```{r, out.height="500px",out.width="500px",echo=TRUE,eval=TRUE,fig.cap="Replace text here with the caption"}
+knitr::include_graphics("C:/Users/janel/OneDrive/Documents/NM2207/Week 1/LayoutScreenshot.png") 
+```
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
