@@ -1,12 +1,12 @@
 {
-    "id": "F1B3727E",
-    "path": "~/School - Y2S1/Y2S1 NM2207 github/NM2207-assignment-uploads/archive/janelletankm.github.io/index.qmd",
+    "id": "47C4E03F",
+    "path": "~/School - Y2S1/Y2S1 NM2207 github/NM2207-assignment-uploads/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1217508910",
     "contents": "",
     "dirty": false,
-    "created": 1697454142121.0,
+    "created": 1697644353600.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "2:0",
+        "rmdVisualModeLocation": "36:0",
         "cursorPosition": "0,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1697644906,
+    "lastKnownWriteTime": 1698059474,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1697644906063,
+    "last_content_update": 1698059474197,
     "read_only": false,
     "read_only_alternatives": []
 }

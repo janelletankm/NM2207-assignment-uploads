@@ -1,7 +1,7 @@
 {
-  "hash": "98c83cb4fde439fe3c9d2c5d9ef4adef",
+  "hash": "6c4c693efa3fe216d39ae845593b5562",
   "result": {
-    "markdown": "---\ntitle: \"Janelle's data story!\"\n---\n\n\n# Self Introduction\n\nHello, nice to meet you! I'm Janelle, currently a year 2 Psychology major with a minor in CNM!\n\nI thought it'd be interesting to be able to pick up some coding skills, so here I am! Though it's proving to be rather painful...\n\nLink to my github:\n\nFor my own notice:\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"A data story on Health\"\n---\n\n\n# Self Introduction\n\nHello, nice to meet you! I'm Janelle, currently a year 2 Psychology major with a minor in CNM!\n\nI thought it'd be interesting to be able to pick up some coding skills, so here I am! Though it's proving to be rather painful...\n\nLink to my github:\n\nFor my own notice:\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
