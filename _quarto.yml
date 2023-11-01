@@ -3,17 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "janelletankm.github.io"
+  title: "Janelle's Page!"
   navbar:
-    background: primary
+    background: info
+    search: true
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: My Data Story
 
 format:
   html:
-    theme: cosmo
+    theme: minty
     css: styles.css
     toc: true
 
