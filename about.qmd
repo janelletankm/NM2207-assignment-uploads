@@ -1,37 +1,81 @@
 ---
-title: "The Alcohol scene"
+title: "The Americas: The Alcohol scene"
 ---
 
-Write up:
+A paradox in liquid form.
 
-(Insert data story write up here)
+It exists as a symbol of youth and jubilance to some, inscribed and emboldened into the tapestry of regional cultures, from the lively carnivals in Brazil to the spirited fiestas in Mexico.
 
-Visualizations:
+Yet, omens of death and tragedy dance amongst the shadows of these celebrations. It has been notorious for plaguing lives with addiction, causing countless accidents, and thickening the web of societal issues.
 
-```{r, eval=TRUE,echo=FALSE,show_col_types = FALSE}
+With such a seemingly complex and dichotomous picture, one question arises:
+
+## What exactly is the extent of alcohol abuse and its public health consequences in the Americas?
+
+Hence, to further understand the alcohol scene, we must turn to the data, which paints a vivid portrait of alcohol's pervasive presence and its impacts in the region of the Americas.
+
+### Alcohol consumption in the Americas is one of the highest in the world.
+
+According to Ritchie and Roser (2018) the global average consumption was 6.17 liters per person in 2018.
+
+As can be seen from the figure below when looking at all types of beverages, a good portion of the countries in the Americas were above the global average.
+
+```{r, eval=TRUE,echo=FALSE, show_col_types = FALSE, message=FALSE}
 
 library(tidyverse)
 library(ggplot2)
 library(readr)
+library(plotly)
 
+alcohol_per_capita_consumption_Americas <- read_csv("Recorded-alcohol-per-capita-consumption-Americas.csv")
 
+z <- ggplot(data = alcohol_per_capita_consumption_Americas,
+ mapping = aes(x = Regions,
+ y = Year,
+ colour = BeverageTypes)) +
+ geom_point() + 
+  labs(title = "America's Alcohol per capita (Ages 15+) Consumption (in litres of pure alcohol), 2018") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+ggplotly(z)
+```
+
+With these statistics, it is easier to see what the alcohol scene is like within the specific countries in the region.
+
+### Naturally, such high alcohol consumption levels come with its consequences.
+
+To delve into the rather pervasive impacts of alcohol, we turn our attention to data sets that highlight the regional dependence on alcohol, along with its morbid companion, liver cirrhosis.
+
+```{r, eval=TRUE,echo=FALSE, show_col_types = FALSE, message=FALSE}
 
 alcohol_prevalence <- read_csv("Regional-prevalence-of-alcohol-dependence.csv")
 
 
-ggplot(data = alcohol_prevalence,
+x <- ggplot(data = alcohol_prevalence,
 mapping = aes(x = WHOregion, y = Dependence)) +
-geom_bar(stat="identity",fill="pink")
+geom_bar(stat="identity",fill="pink")+
+ labs(title = "Regional Prevalence of Alcohol Dependence")
 
+ggplotly(x)
+```
 
-
+```{r, eval=TRUE,echo=FALSE, show_col_types = FALSE, message=FALSE}
 cirrhosis_prevalence <- read_csv("regional-prevalence-of-liver-cirrhosis-deaths.csv")
 
-ggplot(data = cirrhosis_prevalence,
+y <- ggplot(data = cirrhosis_prevalence,
 mapping = aes(x = WHOregion, y = cirrhosis)) +
-geom_bar(stat="identity", fill= "blue")
+geom_bar(stat="identity", fill= "blue")+
+ labs(title = "Regional Prevalence of Liver Cirrhosis")
 
-
-
-
+ggplotly(y)
 ```
+
+### Zooming in further into the Americas
+
+Examine disparities and vulnerable populations:
+
+Up till now, we've only been looking at the general picture; but what is the alcohol scene actually like for different demographics within the Americas?
+
+Explore prevention and treatment efforts:
+
+Compare regional and national data:

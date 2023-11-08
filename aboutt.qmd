@@ -1,0 +1,21 @@
+---
+title: "How this website came about!"
+about: 
+  template: jolla
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/janelletankm/NM2207-assignment-uploads.git
+---
+
+I thought it'd be interesting to be able to pick up some coding skills, so here I am in NM2207! Though it's proving to be rather painful, I've come to enjoy seeing unintelligible lines of code manifest in the form of exciting visuals.
+
+My initial decision to enroll in this module stemmed from my interest in UX/UI design. I was itching to know what goes on behind the scenes of every website, and I really wanted to be able to create a website I could call my own.
+
+In essence, as tacky as it sounds, I just wanted a taste of what it's like as a *stem-girly*.
+
+Final thoughts:
+
+It tastes *so frustratingly* bitter-sweet, but sweet nonetheless.
+
+Access my Github below!

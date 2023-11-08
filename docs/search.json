@@ -2,15 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "A data story on Health!",
+    "title": "A little bit about me!",
     "section": "",
-    "text": "Self Introduction\nHello, nice to meet you! I’m Janelle, currently a year 2 Psychology major with a minor in CNM!\nI thought it’d be interesting to be able to pick up some coding skills, so here I am! Though it’s proving to be rather painful…\nLink to my github: https://github.com/janelletankm/NM2207-assignment-uploads.git\nFor my own notice:\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "What I Do\nHello, nice to meet you! I’m Janelle, currently a year 2 Psychology major with a minor in CNM!\nFor my own notice:\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "The Alcohol scene",
+    "title": "The Americas: The Alcohol scene",
     "section": "",
-    "text": "Write up:\n(Insert data story write up here)\nVisualizations:\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\nRows: 7 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): WHOregion\ndbl (1): Dependence\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\nRows: 7 Columns: 2\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): WHOregion\ndbl (1): cirrhosis\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+    "text": "A paradox in liquid form.\nIt exists as a symbol of youth and jubilance to some, inscribed and emboldened into the tapestry of regional cultures, from the lively carnivals in Brazil to the spirited fiestas in Mexico.\nYet, omens of death and tragedy dance amongst the shadows of these celebrations. It has been notorious for plaguing lives with addiction, causing countless accidents, and thickening the web of societal issues.\nWith such a seemingly complex and dichotomous picture, one question arises:"
+  },
+  {
+    "objectID": "aboutt.html",
+    "href": "aboutt.html",
+    "title": "How this website came about!",
+    "section": "",
+    "text": "I thought it’d be interesting to be able to pick up some coding skills, so here I am in NM2207! Though it’s proving to be rather painful, I’ve come to enjoy seeing unintelligible lines of code manifest in the form of exciting visuals.\nMy initial decision to enroll in this module stemmed from my interest in UX/UI design. I was itching to know what goes on behind the scenes of every website, and I really wanted to be able to create a website I could call my own.\nIn essence, as tacky as it sounds, I just wanted a taste of what it’s like as a stem-girly.\nFinal thoughts:\nIt tastes so frustratingly bitter-sweet, but sweet nonetheless.\nAccess my Github below!"
+  },
+  {
+    "objectID": "about.html#what-exactly-is-the-extent-of-substance-abuse-and-its-public-health-consequences-in-the-americas",
+    "href": "about.html#what-exactly-is-the-extent-of-substance-abuse-and-its-public-health-consequences-in-the-americas",
+    "title": "The Americas: The Alcohol scene",
+    "section": "What exactly is the extent of substance abuse and its public health consequences in the Americas?",
+    "text": "What exactly is the extent of substance abuse and its public health consequences in the Americas?\nHence, to further understand the alcohol scene, we must turn to the data, which paints a vivid portrait of alcohol’s pervasive presence and its impacts in the region of the Americas.\n\nAlcohol consumption in the Americas is one of the highest in the world.\nAccording to Ritchie and Roser (2018) the global average consumption was 6.17 liters per person in 2018.\nAs can be seen from the figure below when looking at all types of beverages, a good portion of the countries in the Americas were above the global average.\n\n\n\n\n\n\nWith these statistics, it is easier to see what the alcohol scene is like within the specific countries in the region.\n\n\nNaturally, such high alcohol consumption levels come with its consequences.\nTo delve into the rather pervasive impacts of alcohol, we turn our attention to data sets that highlight the regional dependence on alcohol, along with its morbid companion, liver cirrhosis."
+  },
+  {
+    "objectID": "about.html#what-exactly-is-the-extent-of-alcohol-abuse-and-its-public-health-consequences-in-the-americas",
+    "href": "about.html#what-exactly-is-the-extent-of-alcohol-abuse-and-its-public-health-consequences-in-the-americas",
+    "title": "The Americas: The Alcohol scene",
+    "section": "What exactly is the extent of alcohol abuse and its public health consequences in the Americas?",
+    "text": "What exactly is the extent of alcohol abuse and its public health consequences in the Americas?\nHence, to further understand the alcohol scene, we must turn to the data, which paints a vivid portrait of alcohol’s pervasive presence and its impacts in the region of the Americas.\n\nAlcohol consumption in the Americas is one of the highest in the world.\nAccording to Ritchie and Roser (2018) the global average consumption was 6.17 liters per person in 2018.\nAs can be seen from the figure below when looking at all types of beverages, a good portion of the countries in the Americas were above the global average.\n\n\n\n\n\n\nWith these statistics, it is easier to see what the alcohol scene is like within the specific countries in the region.\n\n\nNaturally, such high alcohol consumption levels come with its consequences.\nTo delve into the rather pervasive impacts of alcohol, we turn our attention to data sets that highlight the regional dependence on alcohol, along with its morbid companion, liver cirrhosis.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nZooming in further into the Americas\nExamine disparities and vulnerable populations:\nUp till now, we’ve only been looking at the general picture; but what is the alcohol scene actually like for different demographics within the Americas?\nExplore prevention and treatment efforts:\nCompare regional and national data:"
   }
 ]

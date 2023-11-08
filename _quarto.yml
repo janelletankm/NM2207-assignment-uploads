@@ -5,11 +5,13 @@ project:
 website:
   title: "Janelle's Page!"
   navbar:
-    background: info
+    background: secondary
     search: true
     left:
       - href: index.qmd
         text: Home
+      - href: aboutt.qmd
+        text: About
       - href: about.qmd
         text: My Data Story
 

@@ -1,19 +1,13 @@
 ---
-title: "A data story on Health!"
+title: "A little bit about me!"
 ---
 
-# Self Introduction
+### What I Do
+
+One thing's for sure, I'm confused. I
 
 Hello, nice to meet you! I'm Janelle, currently a year 2 Psychology major with a minor in CNM!
-
-I thought it'd be interesting to be able to pick up some coding skills, so here I am! Though it's proving to be rather painful...
-
-Link to my github: https://github.com/janelletankm/NM2207-assignment-uploads.git
 
 For my own notice:
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
