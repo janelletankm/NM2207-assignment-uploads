@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Janelle's Page!"
+  navbar:
+    background: secondary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: aboutt.qmd
+        text: About
+      - href: about.qmd
+        text: My Data Story
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+
+editor: visual
+

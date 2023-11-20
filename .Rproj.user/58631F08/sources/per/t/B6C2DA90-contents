@@ -1,8 +1,8 @@
 ---
-title: "The Americas: The Alcohol scene"
+title: "Health in the Americas: The Alcohol scene"
 ---
 
-A paradox in liquid form.
+Alcohol, a paradox in liquid form.
 
 It exists as a symbol of youth and jubilance to some, inscribed and emboldened into the tapestry of regional cultures, from the lively carnivals in Brazil to the spirited fiestas in Mexico.
 
@@ -12,13 +12,15 @@ With such a seemingly complex and dichotomous picture, one question arises:
 
 ## What exactly is the extent of alcohol abuse and its public health consequences in the Americas?
 
-Hence, to further understand the alcohol scene, we must turn to the data, which paints a vivid portrait of alcohol's pervasive presence and its impacts in the region of the Americas.
+Now, why is *this* question in particular so important?
+
+Alcohol abuse in the Americas is a significant public health concern with severe consequences. This is evident from the fact that overindulgence in alcohol caused over 140, 000 fatalities annually in the United States *alone* during 2015-2019---that is, over 380 deaths daily (CDC, 2022). And this isn't even taking into account the other countries in the region. As such, alcohol abuse echoes the WHO's global perspective on general substance abuse, whereby it contributes to a considerable burden on healthcare systems, law enforcement, and productivity loss. This question is hence important, as understanding the extent of alcohol abuse in the Americas is crucial for shaping targeted public health policies and interventions. This aligns with the global imperative to alleviate the negative impacts of substance abuse.
+
+Therefore, to further understand the alcohol scene, we must turn to the data, which paints a vivid portrait of alcohol's pervasive presence and its impacts in the region of the Americas.
 
 ### Alcohol consumption in the Americas is one of the highest in the world.
 
 According to Ritchie and Roser (2018) the global average consumption was 6.17 liters per person in 2018.
-
-As can be seen from the figure below when looking at all types of beverages, a good portion of the countries in the Americas were above the global average.
 
 ```{r, eval=TRUE,echo=FALSE, show_col_types = FALSE, message=FALSE}
 
@@ -34,15 +36,17 @@ z <- ggplot(data = alcohol_per_capita_consumption_Americas,
  y = Year,
  colour = BeverageTypes)) +
  geom_point() + 
-  labs(title = "America's Alcohol per capita (Ages 15+) Consumption (in litres of pure alcohol), 2018") +
+  labs(title = "America's Alcohol per capita (Ages 15+) Consumption, 2018", y = "Alcohol per Capita Consumption (in Litres of pure alcohol)") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 ggplotly(z)
 ```
 
-With these statistics, it is easier to see what the alcohol scene is like within the specific countries in the region.
+This first plot on the Recorded alcohol per capita consumption in the Americas (GHO \| By Category \| Recorded Alcohol per Capita Consumption, from 2010 - Updated May 2021, n.d.) shows how alcohol consumption over there is rather high, especially when contrasted against the global average consumption of alcohol mentioned earlier. This information can be inferred from how the points for "All types" of beverages for quite a few countries are depicted to be above the average figure mentioned earlier. The graph also allows you to see the exact consumption levels of each country within the region of the Americas.
 
-### Naturally, such high alcohol consumption levels come with its consequences.
+Thus, recorded alcohol per capita consumption can help answer the first portion of our question, because it gives us deeper insights into the alcohol scene in the region of the Americas, helping us have a better picture of the extent of substance abuse there. Understanding the severity of the issue helps us better appreciate the need to address it.
+
+### Now naturally, such high alcohol consumption levels come with its consequences.
 
 To delve into the rather pervasive impacts of alcohol, we turn our attention to data sets that highlight the regional dependence on alcohol, along with its morbid companion, liver cirrhosis.
 
@@ -54,7 +58,7 @@ alcohol_prevalence <- read_csv("Regional-prevalence-of-alcohol-dependence.csv")
 x <- ggplot(data = alcohol_prevalence,
 mapping = aes(x = WHOregion, y = Dependence)) +
 geom_bar(stat="identity",fill="pink")+
- labs(title = "Regional Prevalence of Alcohol Dependence")
+ labs(title = "Regional Prevalence of Alcohol Dependence, 2016", x = "WHO Region", y = "Regional Prevalence of Alcohol Dependence (%)")
 
 ggplotly(x)
 ```
@@ -65,17 +69,31 @@ cirrhosis_prevalence <- read_csv("regional-prevalence-of-liver-cirrhosis-deaths.
 y <- ggplot(data = cirrhosis_prevalence,
 mapping = aes(x = WHOregion, y = cirrhosis)) +
 geom_bar(stat="identity", fill= "blue")+
- labs(title = "Regional Prevalence of Liver Cirrhosis")
+ labs(title = "Regional Prevalence of Liver Cirrhosis Deaths, 2016", x = "WHO Region", y = "Regional Prevalence of Liver Cirrhosis Deaths (%)")
 
 ggplotly(y)
 ```
 
-### Zooming in further into the Americas
+These second and third bar plots on the Regional prevalence of alcohol dependence (GHO \| By Category \| Regional Prevalence of Alcohol Dependence (%) - by WHO Region, n.d.) and liver cirrhosis (GHO \| By Category \| Regional Prevalence, AAFs (15+), Liver Cirrhosis Deaths - by WHO Region, n.d.) show how the prevalence of such conditions is one of the highest in the world. This is done by contrasting the prevalence of such health impacts in the Americas against those of the other regions in the world in the bar plots, with America's prevalence being depicted as the mode(s).
 
-Examine disparities and vulnerable populations:
+Therefore, regional prevalence of alcohol dependence and liver cirrhosis can help to answer the second portion of our question because it underscores the consequences of alcohol abuse on the public. This helps us to better visualise the negative impacts of alcohol on its consumers in the Americas, which further highlights the need to address this ongoing issue.
 
-Up till now, we've only been looking at the general picture; but what is the alcohol scene actually like for different demographics within the Americas?
+### Conclusion
 
-Explore prevention and treatment efforts:
+The extent of alcohol abuse in the Americas, as shown by the high levels of recorded alcohol per capita consumption, is a dire issue. The data underscores that a sizeable portion of the region surpasses the global average, highlighting the prevalence of alcohol use. This sets the stage for understanding the far-reaching impacts on public health.
 
-Compare regional and national data:
+The consequences of excessive alcohol consumption manifest in the alarming regional prevalence of alcohol dependence and liver cirrhosis. The data highlights not only the size of the issue but also the tangible health toll it takes on individuals. The paradoxical nature of alcohol, celebrated in cultural festivities yet contributing to significant morbidity, hence calls for a nuanced approach to public health.
+
+A multi-faceted approach that recognises both the cultural significance of alcohol and its detrimental health effects is needed to address this complex issue. Targeted public health interventions and policies that are informed by a comprehensive understanding of the regional landscape is paramount. By doing so, we can strive to alleviate the negative impacts of alcohol abuse, promoting a healthier and more balanced relationship with this liquid paradox. In the realm of public health, acknowledging the dual nature of alcohol is key to developing effective solutions that resonate with the diverse communities of the Americas.
+
+## References 
+
+CDC. (2022, November 15). *Alcohol-related deaths*. Centers for Disease Control and Prevention. https://www.cdc.gov/alcohol/features/excessive-alcohol-deaths.html
+
+GHO \| By category \| Recorded alcohol per capita consumption, from 2010---Updated May 2021. (n.d.). WHO. Retrieved 20 November 2023, from https://apps.who.int/gho/data/node.main.A1039?lang=en
+
+GHO \| By category \| Regional prevalence, AAFs (15+), liver cirrhosis deaths---By WHO region. (n.d.). WHO. Retrieved 20 November 2023, from https://apps.who.int/gho/data/node.main.A1080?lang=en
+
+GHO \| By category \| Regional prevalence of alcohol dependence (%)---By WHO region. (n.d.). WHO. Retrieved 20 November 2023, from https://apps.who.int/gho/data/node.main.A1071?lang=en
+
+Ritchie, H., & Roser, M. (2018). Alcohol consumption. *Our World in Data*. https://ourworldindata.org/alcohol-consumption

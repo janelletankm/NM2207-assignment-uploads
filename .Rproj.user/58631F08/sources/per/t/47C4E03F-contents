@@ -1,13 +1,17 @@
 ---
-title: "A little bit about me!"
+title: "A little bit about..."
+about: 
+  template: jolla
 ---
 
-### What I Do
+## Me! 
 
-One thing's for sure, I'm confused. I
+Hello, nice to meet you, and welcome to my page! I'm Janelle, currently a year 2 Psychology major with a minor in CNM, and this is me!
 
-Hello, nice to meet you! I'm Janelle, currently a year 2 Psychology major with a minor in CNM!
+```{r, eval=TRUE,echo=FALSE}
+knitr::include_graphics("self-photo.png")
+```
 
-For my own notice:
+As a student navigating through the ups and downs of University life, I thought it'd be good to expose myself to different things here and there to build up some resilience, including coding! This website is hence meant as a final project for the module NM2207, where I showcase my grit in the world of code by doing up a data story on Health, namely, Alcohol abuse and its Public Health Consequences in the Americas.\
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I hope you enjoy your (short) journey throughout my website!

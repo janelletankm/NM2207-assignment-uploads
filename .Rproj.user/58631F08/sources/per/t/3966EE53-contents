@@ -8,7 +8,7 @@ about:
       href: https://github.com/janelletankm/NM2207-assignment-uploads.git
 ---
 
-I thought it'd be interesting to be able to pick up some coding skills, so here I am in NM2207! Though it's proving to be rather painful, I've come to enjoy seeing unintelligible lines of code manifest in the form of exciting visuals.
+I thought it'd be interesting to be able to pick up some coding skills, so here I am in NM2207! Though it's proving to be rather painful, I've come to enjoy seeing unintelligible lines of code manifest in the form of exciting visuals and of course, my data story!
 
 My initial decision to enroll in this module stemmed from my interest in UX/UI design. I was itching to know what goes on behind the scenes of every website, and I really wanted to be able to create a website I could call my own.
 
@@ -18,4 +18,8 @@ Final thoughts:
 
 It tastes *so frustratingly* bitter-sweet, but sweet nonetheless.
 
-Access my Github below!
+This entire project was implemented with the help of MUCH patience, both on the part of the module's Teaching Assistants, the professor, and me.
+
+This project was also implemented using Quarto and concepts taught in the lectures, especially the lectures focusing on data visualisations with ggplot.
+
+Some new concepts learned include the usage and implementation of "plotly" to make my graphs interactive. I also learned how to generally tinker around with the design of the wesbite with different templates (eg jolla) and designs, tilt the labels of the x-axis at a 90-degree angle for better viewing of labels, and even how to input a cute logo for Github on my webpage to access my actual Github!

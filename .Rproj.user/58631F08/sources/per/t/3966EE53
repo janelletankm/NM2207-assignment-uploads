@@ -3,7 +3,7 @@
     "path": "~/School - Y2S1/Y2S1 NM2207 github/NM2207-assignment-uploads/aboutt.qmd",
     "project_path": "aboutt.qmd",
     "type": "quarto_markdown",
-    "hash": "3607560719",
+    "hash": "1836962712",
     "contents": "",
     "dirty": false,
     "created": 1699251700609.0,
@@ -19,14 +19,14 @@
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "777:0"
+        "rmdVisualModeLocation": "44:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1699269960,
+    "lastKnownWriteTime": 1700501507,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1699269960455,
+    "last_content_update": 1700501507114,
     "read_only": false,
     "read_only_alternatives": []
 }
